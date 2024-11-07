@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from myapp import views  # Import the views from myapp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),  # Add this line for the root URL
-    path('api/', include('myapp.urls')),  # Existing API URL
+    path('api/', include('apps.myapp.urls')),  # Corrected path for myapp
+    path('financial-data/', include('apps.financial_data.urls')),  # Correct path for financial_data
 ]

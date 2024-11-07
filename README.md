@@ -313,3 +313,77 @@ NYBRECON3/
         data.json
     venv/
 ```
+
+
+
+
+
+
+
+
+
+
+
+## Updated Project Structure
+
+NYBRECON3/
+│
+├── manage.py
+├── requirements.txt
+├── .gitignore
+├── README.md
+│
+├── NYBRECON3/                  # Main project configuration
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   ├── asgi.py
+│   ├── static/                 # Static files (e.g., CSS, JS)
+│   ├── templates/              # Shared templates across the project
+│
+├── apps/                       # Directory for all your apps
+│   ├── __init__.py
+│   ├── core/                   # Core app for shared utilities
+│   │   ├── __init__.py
+│   │   ├── models.py           # Shared models (if any)
+│   │   ├── views.py            # Shared views (if any)
+│   │   ├── utils.py            # Utility functions
+│   │   ├── serializers.py      # Shared serializers (if using DRF)
+│   │   ├── urls.py
+│   │
+│   ├── financial_data/         # App for managing financial data
+│   │   ├── __init__.py
+│   │   ├── models.py           # Models for financial data
+│   │   ├── views/              # Views split into modules
+│   │   │   ├── __init__.py
+│   │   │   ├── api_views.py    # API views for financial data
+│   │   │   ├── ui_views.py     # Views for rendering the UI
+│   │   │
+│   │   ├── templates/          # Templates specific to this app
+│   │   │   └── financial_data/
+│   │   │       ├── index.html
+│   │   │       ├── other_page.html
+│   │   │
+│   │   ├── static/             # Static files specific to this app
+│   │   │   └── financial_data/
+│   │   │       ├── css/
+│   │   │       ├── js/
+│   │   │       ├── images/
+│   │   │
+│   │   ├── urls.py             # URL routing for this app
+│   │   ├── admin.py
+│   │   ├── tests.py
+│   │
+│   └── another_app/            # You can add more apps similarly
+│       ├── __init__.py
+│       ├── models.py
+│       ├── views/
+│       ├── templates/
+│       ├── static/
+│       ├── urls.py
+│       ├── admin.py
+│       ├── tests.py
+│
+└── data/                       # Directory for JSON data files
+    └── data.json
