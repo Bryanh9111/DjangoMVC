@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data View</title>
+</head>
+<body>
+    <h1>Data View</h1>
+    <div id="data-container">
+        {% for item in financial_data %}
+            <div>
+                <p><strong>GL_AC_NO:</strong> {{ item.GL_AC_NO }}</p>
+                <p><strong>GL_AC_DESC:</strong> {{ item.GL_AC_DESC }}</p>
+                <p><strong>Net_DR_CR:</strong> {{ item.Net_DR_CR }}</p>
+                <p><strong>Converted_PnL:</strong> {{ item.Converted_PnL }}</p>
+                <p><strong>GL_RP_DT_PRE_TL:</strong> {{ item.GL_RP_DT_PRE_TL }}</p>
+                <p><strong>GL_RP_DT_CUR_TL:</strong> {{ item.GL_RP_DT_CUR_TL }}</p>
+                <p><strong>GL_RP_DIFF:</strong> {{ item.GL_RP_DIFF }}</p>
+                <p><strong>FOX_CON_TL:</strong> {{ item.FOX_CON_TL }}</p>
+                <p><strong>DIFF:</strong> {{ item.DIFF }}</p>
+                <p><strong>Comments:</strong> {{ item.Comments }}</p>
+                <p><strong>UPSTREAM_REPORT_DATE:</strong> {{ item.UPSTREAM_REPORT_DATE }}</p>
+                <p><strong>VERSION_ID:</strong> {{ item.VERSION_ID }}</p>
+                <p><strong>LOAD_TIME_STAMP:</strong> {{ item.LOAD_TIME_STAMP }}</p>
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

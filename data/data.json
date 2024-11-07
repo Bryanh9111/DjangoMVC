@@ -1,0 +1,32 @@
+[
+    {
+      "GL_AC_NO": 123456,
+      "GL_AC_DESC": "Description 1",
+      "Net_DR_CR": 1000.0,
+      "Converted_PnL": 1200.0,
+      "GL_RP_DT_PRE_TL": 1100.0,
+      "GL_RP_DT_CUR_TL": 1150.0,
+      "GL_RP_DIFF": 50.0,
+      "FOX_CON_TL": 1180.0,
+      "DIFF": 20.0,
+      "Comments": "Comment 1",
+      "UPSTREAM_REPORT_DATE": "2023-05-27T10:30:00Z",
+      "VERSION_ID": "v1",
+      "LOAD_TIME_STAMP": "2023-05-28T12:00:00Z"
+    },
+    {
+      "GL_AC_NO": 789012,
+      "GL_AC_DESC": "Description 2",
+      "Net_DR_CR": 2000.0,
+      "Converted_PnL": 2200.0,
+      "GL_RP_DT_PRE_TL": 2100.0,
+      "GL_RP_DT_CUR_TL": 2150.0,
+      "GL_RP_DIFF": 50.0,
+      "FOX_CON_TL": 2180.0,
+      "DIFF": 20.0,
+      "Comments": "Comment 2",
+      "UPSTREAM_REPORT_DATE": "2023-05-28T11:30:00Z", 
+      "VERSION_ID": "v2",
+      "LOAD_TIME_STAMP": "2023-05-29T13:00:00Z"
+    }
+  ]
